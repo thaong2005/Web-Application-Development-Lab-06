@@ -20,7 +20,7 @@ import com.student.model.User;
 
 public class UserDAO {
     
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/web_lab06";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/student_management";
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "1234567890";
     
