@@ -5,7 +5,7 @@ AUTHENTICATION &amp; SESSION MANAGEMENT
 
 # Login Flow:
 
-1. Access: http://localhost:8080/YourApp/
+1. Access: http://localhost:8080/student-management/
 Redirected to login (handled by `AuthFilter`).
 ``` java
 @WebFilter(filterName = "AuthFilter", urlPatterns = {"/*"})
