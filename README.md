@@ -25,7 +25,7 @@ AUTHENTICATION &amp; SESSION MANAGEMENT
 
 #### Demo code
 
-`LoginController` (rút gọn):
+`LoginController`:
 ```java
 User user = userDAO.authenticate(username, password);
 if (user != null) {
