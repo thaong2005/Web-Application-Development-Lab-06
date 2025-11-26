@@ -259,6 +259,17 @@
             </div>
         </div>
         
+        <!-- Action buttons - Admin only -->
+        <c:if test="${sessionScope.role eq 'admin'}">
+            <td>
+                <a href="student?action=edit&id=${student.id}" 
+                    class="btn-edit">Edit</a>
+                <a href="student?action=delete&id=${student.id}" 
+                    class="btn-delete"
+                    onclick="return confirm('Delete this student?')">Delete</a>
+            </td>
+        </c:if>
+        
         <!-- Student Table -->
         <table>
             <thead>
@@ -281,17 +292,6 @@
                         <td>${student.fullName}</td>
                         <td>${student.email}</td>
                         <td>${student.major}</td>
-                        
-                        <!-- Action buttons - Admin only -->
-                        <c:if test="${sessionScope.role eq 'admin'}">
-                            <td>
-                                <a href="student?action=edit&id=${student.id}" 
-                                   class="btn-edit">Edit</a>
-                                <a href="student?action=delete&id=${student.id}" 
-                                   class="btn-delete"
-                                   onclick="return confirm('Delete this student?')">Delete</a>
-                            </td>
-                        </c:if>
                     </tr>
                 </c:forEach>
                 
